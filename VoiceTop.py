@@ -27,21 +27,20 @@ class VoiceTopMod(loader.Module):
     """Показывает статистику голосовых сообщений в чате"""
     
     strings = {
-    "name": "VoiceTop",
-    "en": {
-        "processing": "<b>🔄 Counting voice messages...\nAnalyzed: {} messages</b>",
-        "no_voices": "<b>❌ No voice messages in this chat</b>",
-        "voice_top": "<b>📊 Voice Messages Top\nTotal analyzed: {} messages</b>\n\n{}",
-        "voice_stat": "<b>👤 {}</b>: {} voice messages"
-    },
-    "ru": {
-        "processing": "<b>🔄 Идет подсчет голосовых сообщений...\nПроанализировано: {} сообщений</b>",
-        "no_voices": "<b>❌ В этом чате нет голосовых сообщений</b>",
-        "voice_top": "<b>📊 Топ по голосовым сообщениям\nВсего проанализировано: {} сообщений</b>\n\n{}",
-        "voice_stat": "<b>👤 {}</b>: {} голосовых"
+        "name": "VoiceTop",
+        "en": {
+            "processing": "<b>🔄 Counting voice messages...\nAnalyzed: {} messages</b>",
+            "no_voices": "<b>❌ No voice messages in this chat</b>",
+            "voice_top": "<b>📊 Voice Messages Top\nTotal analyzed: {} messages</b>\n\n{}",
+            "voice_stat": "<b>👤 {}</b>: {} voice messages"
+        },
+        "ru": {
+            "processing": "<b>🔄 Идет подсчет голосовых сообщений...\nПроанализировано: {} сообщений</b>",
+            "no_voices": "<b>❌ В этом чате нет голосовых сообщений</b>",
+            "voice_top": "<b>📊 Топ по голосовым сообщениям\nВсего проанализировано: {} сообщений</b>\n\n{}",
+            "voice_stat": "<b>👤 {}</b>: {} голосовых"
+        }
     }
-}
-
 
     def __init__(self):
         self.config = loader.ModuleConfig(
